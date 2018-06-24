@@ -11,5 +11,16 @@ pipeline {
         bat 'npm install'
       }
     }
+    stage('Test') {
+      agent {
+        node {
+          label 'master'
+        }
+
+      }
+      steps {
+        sh 'echo "test stage"'
+      }
+    }
   }
 }
