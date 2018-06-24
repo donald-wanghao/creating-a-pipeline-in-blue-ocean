@@ -1,14 +1,14 @@
 pipeline {
   agent {
     node {
-      label 'linux'
+      label 'master'
     }
 
   }
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        bat 'npm install'
       }
     }
   }
