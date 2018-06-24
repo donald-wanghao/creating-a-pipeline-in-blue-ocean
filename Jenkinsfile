@@ -19,7 +19,7 @@ pipeline {
 
       }
       steps {
-        sh 'echo "test stage"'
+        bat 'echo "test stage"'
       }
     }
   }
